@@ -31,30 +31,16 @@
     </tr>
     </thead>
     <tbody>
+
+    <% for (Student student : students) {%>
     <tr>
-        <td>Jongen</td>
-        <td>Geertje</td>
-        <td>23</td>
-        <td>Toegepaste Informatica</td>
+        <td><%= student.getNaam()%></td>
+        <td><%= student.getVoornaam()%></td>
+        <td><%= student.getLeeftijd()%></td>
+        <td><%= student.getStudierichting()%></td>
     </tr>
-    <tr>
-        <td>Melaerts</td>
-        <td>Kristien</td>
-        <td>21</td>
-        <td>Chemie</td>
-    </tr>
-    <tr>
-        <td>Steegmans</td>
-        <td>Elke</td>
-        <td>16</td>
-        <td>Vroedkunde</td>
-    </tr>
-    <tr>
-        <td>Van Hee</td>
-        <td>Jan</td>
-        <td>18</td>
-        <td>Verpleegkunde</td>
-    </tr>
+    <%}%>
+
     </tbody>
 
 </table>
